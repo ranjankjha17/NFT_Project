@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { FiSearch } from "react-icons/Fi"
+import { FaSearch } from "react-icons/fa"
 
 const data=[
     {
@@ -37,7 +37,7 @@ const Navbar=()=>{
            <div className="flex"> 
             <h3 className="font-extrabold md:text-sm text-sm px-7 md:px-2 py-2 text-gray-900">P2E Pro</h3>
             <div className="flex w-42 h-10 bg-gray-200 md:ml-10 ml-10 pl-5 pr-2 rounded-lg text-sm">
-                <FiSearch className="mt-3"/>
+                <FaSearch className="mt-3"/>
                 <input
                 type="search"
                 placeholder="Collection, item or user"
