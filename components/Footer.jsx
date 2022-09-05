@@ -1,10 +1,54 @@
 import { FaDiscord, FaGithub, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa"
 
-const data1=["Profile","Maketplace","Creators","Activity","Collections"]
 
-const data2=["Upload","Connect wallet","Our blog","item details","Contact us"]
+const data1=[
+    {
+        id:1,
+        name:"Profile"
+    },
+    {
+        id:2,
+        name:"Maketplace"
+    },
+    {
+        id:3,
+        name:"Creators"
+    },
+    {
+        id:4,
+        name:"Activity"
+    },
+    {
+        id:5,
+        name:"Collections"
+    }
+]
 
-const data3=[]
+const data2=[
+    {
+        id:1,
+        name:"Upload"
+    },
+    {
+        id:2,
+        name:"Connect wallet"
+    },
+    {
+        id:3,
+        name:"Our blog"
+    },
+    {
+        id:4,
+        name:"item details"
+    },
+    {
+        id:5,
+        name:"Contact us"
+    }
+]
+
+
+
 
 const Footer=()=>{
     return(
@@ -35,16 +79,16 @@ const Footer=()=>{
             <div className="">
             <h5 className="font-bold text-base">Market place</h5>
                 {
-                    data1.map((el,i)=>(
-                        <div className="text-sm my-2 text-slate-700" key={i}>{el}</div>
+                    data1.map((el)=>(
+                        <div className="text-sm my-2 text-slate-700" key={el.id}>{el.name}</div>
                         ))
                 }
             </div>
             <div>
             <h5 className="font-bold text-base">Company</h5>
                 {
-                    data2.map((el,j)=>(
-                        <div className="text-sm my-2 text-slate-700" key={j}>{el}</div>
+                    data2.map((el)=>(
+                        <div className="text-sm my-2 text-slate-700" key={el.id}>{el.name}</div>
                         ))
                 }
             </div>

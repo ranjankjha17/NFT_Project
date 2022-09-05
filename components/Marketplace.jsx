@@ -1,6 +1,4 @@
 import Button from "./Button"
-import {FiMusic} from "react-icons/Fi"
-import { FaHeart, FaRegHeart } from 'react-icons/fa';
 const Marketplace=()=>{
     return(
         <div className="mx-2  md:mx-16  mt-5">

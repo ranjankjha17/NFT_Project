@@ -1,5 +1,5 @@
 
-//https://opensea.io/assets/ethereum/0xe6270165bd2d78d6f3ce609092a0aa6acdc67748/970
+import Image from "next/image"
 
 const data = [
     {
@@ -54,8 +54,8 @@ const data = [
 ]
 
 const styles = {
-    imageUrl: `w-auto h-auto`,
-    card: `h-auto md:h-[10rem] w-[18rem] border border-slate-300 my-5 md:my-0`,
+    imageUrl: `w-auto h-auto `,
+    card: `h-auto md:h-[10rem] w-[18rem] border border-slate-300 my-5 md:my-0 z-0`,
     icon: `h-10 w-10 rounded`,
     h5Text:`text-sm text-gray-500`
 }
@@ -69,13 +69,13 @@ const TrendingAuctions = () => {
                     data.map((el) => (
                         <div key={el.id} className={styles.card}>
                             <div className="flex items-start justify-around">
-                                <img className={styles.icon} src="https://static-cse.canva.com/blob/931214/1600w-EW4cggXkgbc.jpg" alt="icon" />
+                                <Image height="40" width="40" className={styles.icon} src="https://static-cse.canva.com/blob/931214/1600w-EW4cggXkgbc.jpg" alt="icon" />
                                 <h5 className={styles.h5Text} style={{marginTop:"0.5rem"}}>{el.username}</h5>
-                                <img className="w-5 h-5 mt-3" src="https://i.pinimg.com/originals/59/cf/b1/59cfb142627bb4d8d0a75721b67d699f.png" alt="dill" />
+                                <Image height="25" width="25" style={{marginTop:"0.25rem"}}  src="https://i.pinimg.com/originals/59/cf/b1/59cfb142627bb4d8d0a75721b67d699f.png" alt="dill" />
                             </div>
-                            <img className={styles.imageUrl} src={el.image_url} alt="trending_image" />
+                            <Image height="275" width="300" className={styles.imageUrl} src={el.image_url} alt="trending_image" />
                             <div className="flex items-start justify-start pt-3 px-5">
-                                <img className={styles.icon} src="https://cdn.dribbble.com/users/844597/screenshots/9008058/media/a8bfc3cd2e71a304a02d8729bcffa132.png?compress=1&resize=400x300" alt="icon2" />
+                                <Image className={styles.icon} height="30" width="35" src="https://cdn.dribbble.com/users/844597/screenshots/9008058/media/a8bfc3cd2e71a304a02d8729bcffa132.png?compress=1&resize=400x300" alt="icon2" />
                                 <h5 className={styles.h5Text} style={{marginTop:"0.5rem"}}>{el.tag_name}</h5>
                             </div>
                             <h3 className="text-xl font-bold px-5 py-3">{el.heading}</h3>
@@ -87,7 +87,7 @@ const TrendingAuctions = () => {
                                 </div>
                                 <div className="flex items-center justify-between">
                                     <>
-                                    <img  src="/eth.png" alt="Eth" height="25" width="25"/>
+                                    <Image  src="/eth.png" alt="Eth" height="25" width="25"/>
                                     <h5 className="ml-[-4rem]">{el.bid_price}</h5>
                                     </>
                                     <h5 className="">{el.time}</h5>

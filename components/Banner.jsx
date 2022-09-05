@@ -1,5 +1,5 @@
 
-//linear-gradient(150deg, #53f 15%, #ffffff)
+import Image from "next/image"
 
 const styles={
     wrapper:`h-max-[10rem] flex flex-wrap
@@ -26,7 +26,7 @@ return(
 
         </div>
         <div className="pt-14 md:pt-28 pb-10 mx-2 md:mx-0">
-            <img className="md:h-auto md:w-auto h-[18rem] w-[18rem" src="/nft_photo.jpg" alt="nft image"/>
+            <Image className="md:h-auto md:w-auto h-[18rem] w-[18rem]" src="/nft_photo.jpg" alt="nft image" height="500" width="500"/>
         </div>
     </div>
 )

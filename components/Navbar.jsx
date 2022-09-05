@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { FiSearch } from "react-icons/Fi"
 
 const data=[
@@ -55,7 +56,8 @@ const Navbar=()=>{
                 </div>
 
                 <div>
-                <img className={styles.icon} src="https://static-cse.canva.com/blob/931214/1600w-EW4cggXkgbc.jpg" alt="icon" />
+                
+                    <Image height={"50"} width={"50"} className={styles.icon} src="https://static-cse.canva.com/blob/931214/1600w-EW4cggXkgbc.jpg" alt="icon" />
                 </div>
                 <button type="submit" className="h-10 md:w-28 w-20 rounded-lg bg-blue-600 text-white text-sm text-bold">Login</button>
 

@@ -1,4 +1,3 @@
-import { FaHeart, FaRegHeart } from 'react-icons/fa';
 
 const Button=({text})=>{
     return (

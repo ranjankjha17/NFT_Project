@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 const sellers = [
     {
         id: 1,
@@ -53,7 +55,7 @@ const TopSellers = () => {
 
                         <div className={styles.card} key={el.id}>
                             <div className="w-[6rem] h-[6rem] bg-no-repeat bg-center bg-cover inline-block mx-10 my-5">
-                                <img className="rounded-full w-full h-full" src={el.image_url} alt="seller_pic" />
+                                <Image height={100} width={100} className="rounded-full w-full h-full" src={el.image_url} alt="seller_pic" />
                             </div>
                             <h5 className="mx-10 text-md text-slate-700 font-bold">{el.name}</h5>
                             <div className="mx-10 text-sm text-gray-500">{el.price}</div>

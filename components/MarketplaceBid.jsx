@@ -1,5 +1,5 @@
 
-//https://opensea.io/assets/ethereum/0xe6270165bd2d78d6f3ce609092a0aa6acdc67748/970
+import Image from "next/image"
 
 const data = [
     {
@@ -116,15 +116,17 @@ const MarketplaceBid = () => {
                     data.map((el) => (
                         <div key={el.id} className={styles.card}>
                             <div className="flex items-start justify-around">
-                                <img className={styles.icon} src="https://static-cse.canva.com/blob/931214/1600w-EW4cggXkgbc.jpg" alt="icon" />
+                                <Image height={"40"} width={"40"} className={styles.icon} src="https://static-cse.canva.com/blob/931214/1600w-EW4cggXkgbc.jpg" alt="icon" />
                                 <h5 className={styles.h5Text} style={{marginTop:"0.5rem"}}>{el.username}</h5>
                                 <div>...</div>
                             </div>
-                            <img className={styles.imageUrl} src={el.image_url} alt="trending_image" />
-                            <div className="flex items-start justify-start pt-3 px-5">
-                                <img className={styles.icon} src="https://cdn.dribbble.com/users/844597/screenshots/9008058/media/a8bfc3cd2e71a304a02d8729bcffa132.png?compress=1&resize=400x300" alt="icon2" />
+                            <Image  height="275" width="300" className={styles.imageUrl} src={el.image_url} alt="trending_image" />
+                            <div className="flex items-start justify-evenly pt-3 ">
+                                <div className="flex">
+                                <Image height="30" width="35" className={styles.icon} src="https://cdn.dribbble.com/users/844597/screenshots/9008058/media/a8bfc3cd2e71a304a02d8729bcffa132.png?compress=1&resize=400x300" alt="icon2" />
                                 <h5 className={styles.h5Text} style={{marginTop:"0.5rem"}}>{el.tag_name}</h5>
-                                <img className="w-5 h-5 mt-3 ml-20" src="https://i.pinimg.com/originals/59/cf/b1/59cfb142627bb4d8d0a75721b67d699f.png" alt="dill" />
+                                </div>
+                                <Image  height="25" width="25" className="pt-2" src="https://i.pinimg.com/originals/59/cf/b1/59cfb142627bb4d8d0a75721b67d699f.png" alt="dill" />
                             </div>
                             <h3 className="text-xl font-bold px-5 py-3">{el.heading}</h3>
                             <div className="bg-gray-200 px-5 py-5">
@@ -135,7 +137,7 @@ const MarketplaceBid = () => {
                                 </div>
                                 <div className="flex justify-between items-center">
                                     <>
-                                    <img  src="/eth.png" alt="Eth" height="25" width="25"/>
+                                    <Image  src="/eth.png" alt="Eth" height="25" width="25"/>
                                     <h5 className="">{el.bid_price}</h5>
                                     <button className="w-[8rem] h-[2rem] mx-2 my-2 text-sm md:text-sm bg-blue-700 rounded-3xl font-semibold text-white">Plae a bid </button>
                                     </>

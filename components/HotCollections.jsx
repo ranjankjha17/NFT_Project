@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 const data=[
     {
         id:1,
@@ -10,7 +12,7 @@ const data=[
 
     },
     {
-        id:1,
+        id:2,
         image1:"https://lh3.googleusercontent.com/w62pnUlmErfFAz_TlEjTpw0wkLgqfOw4ihEB_VZlAoCeHNPPNEduWxirrvLYvMyw4PH6sAXyo7GBqgDAstkcQVjmYiRBOaJeebkZ=h400",
         image2:"https://lh3.googleusercontent.com/P6aiPMCLhoY5w8X9TpeaKDywb56ed_xyzxpk7LuwlL0KwtCooNq-gSOnTkcVoFCS7xyazMbb8wiGCcW6s5P76A_Rn1CiUJ1WDN6rNDA=h400",
         image3:"https://expertphotography.b-cdn.net/wp-content/uploads/2020/08/social-media-profile-photos-3.jpg",
@@ -20,7 +22,7 @@ const data=[
 
     },
     {
-        id:1,
+        id:3,
         image1:"https://lh3.googleusercontent.com/JQ2xagOTuraxqfjWA7VozOS5IOUrLdCNWMs6msrtfDDa3ZyWRptVeaQCKy20G_Z9I9duFL1bRj1VPnDPNDVUd_01Tldt2YRt9OYi6A=h400",
         image2:"https://lh3.googleusercontent.com/ozsdtadqWhFswbgMReMCMmOksixr9gELXBwunGYlqpgCJ03lUkEnriujRePMooiKir9hTkIFEUtp3Gh-shqy_XRmfifdDZTqUqLyZA=h400",
         image3:"https://media.istockphoto.com/photos/headshot-portrait-of-smiling-male-employee-in-office-picture-id1309328823?k=20&m=1309328823&s=612x612&w=0&h=RqA2lYygvOxisNPp6UwFjz7bCw_rYITJMqFTMSrhpis=",
@@ -45,12 +47,12 @@ const HotCollections=()=>{
                 data.map((el)=>(
                    <div key={el.id} className={styles.card}>
                     <div className="w-full h-[15rem]">
-                        <img className="w-full h-full" src={el.image1} alt="coolection"/>
+                        <Image height={"275"} width={"300"} className="w-full h-full rounded-lg" src={el.image1} alt="coolection"/>
                     </div>
-                    <div className="flex items-center justify-between mt-2">
-                        <img className="w-[8rem] h-[5rem]" src={el.image2} alt="left_photo"/>
-                        <img className="w-[5rem] h-[5rem] mx-2 rounded-full bg-no-repeat bg-cover" src={el.image3} alt="middle_photo"/>
-                        <img className="w-[8rem] h-[5rem]" src={el.image4} alt="right_photo"/>
+                    <div className="flex items-center justify-between mt-12 mx-2">
+                        <Image height={"80"} width={"100"} className="w-[8rem] h-[5rem] rounded-lg" src={el.image2} alt="left_photo"/>
+                        <Image height={"80"} width={"80"} className="w-[5rem] h-[5rem] mx-2 rounded-full bg-no-repeat bg-cover" src={el.image3} alt="middle_photo"/>
+                        <Image height={"80"} width={"100"} className="w-[8rem] h-[5rem] rounded-lg" src={el.image4} alt="right_photo"/>
                         
                     </div>    
                     <h5 className="text-lg font-semibold text-gray-900 mt-2">{el.name1}</h5>
