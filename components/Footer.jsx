@@ -103,7 +103,7 @@ const Footer=()=>{
                     <div className="w-10 h-10 bg-white px-3 py-3"><FaDiscord className="text-gray-600"/></div>
                 </div>
             </div>
-            <div className="flex text-xs mt-10 mb-5 text-right md:ml-[30rem] text-slate-500">Copyright © 2022. Created with love by <p className="mx-1 text-blue-900">P2E Pro NFT</p></div>
+            <div className="flex text-xs mt-10 mb-5 text-right md:ml-[30rem] text-slate-500">Copyright © 2022. Created with love by <p className="mx-1 text-blue-700">P2E Pro NFT</p></div>
 
         </div>
     )
