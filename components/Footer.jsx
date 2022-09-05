@@ -58,29 +58,22 @@ const Footer=()=>{
                 <h5 className="font-extrabold text-sm px-2 py-2">P2E Pro</h5>
            </div>
             <h5 className="font-medium text-sm my-5">P2E Pro NFT is shared liquidity NFT <br/> market smart contract</h5>
-            <h5 className="font-semibold text-sm my-5">Language</h5>
-         
-
-                {/* <div>
-                   
+            <h5 className="font-semibold text-sm my-5">Language</h5>     
                 
 
-                    <select name="" id="cusSelectbox" className="w-32 h-10 rounded-full px-2 py-2 border-slate-300">
-                        <option value="English"><img src="https://static.webshopapp.com/shops/094414/files/054959460/the-united-states-flag-icon-free-download.jpg"/>English</option>
-                        <option value="Hindi">Hindi</option>
-                        <option value="Nepali">Nepali</option>
-
-                    </select>
-                </div> */}
-
-
+            <select name="cars" id="cars" className="w-32 h-10 rounded-full px-2 py-2 border-slate-300">
+                <option value="volvo">English</option>
+                <option value="saab">Hindi</option>
+                <option value="mercedes">Pakistani</option>
+                <option value="audi">Neplai</option>
+            </select>
 
             </div>
             <div className="">
             <h5 className="font-bold text-base">Market place</h5>
                 {
                     data1.map((el)=>(
-                        <div className="text-sm my-2 text-slate-700" key={el.id}>{el.name}</div>
+                        <div className="text-sm my-3 text-slate-700" key={el.id}>{el.name}</div>
                         ))
                 }
             </div>
@@ -88,7 +81,7 @@ const Footer=()=>{
             <h5 className="font-bold text-base">Company</h5>
                 {
                     data2.map((el)=>(
-                        <div className="text-sm my-2 text-slate-700" key={el.id}>{el.name}</div>
+                        <div className="text-sm my-3 text-slate-700" key={el.id}>{el.name}</div>
                         ))
                 }
             </div>
