@@ -42,12 +42,12 @@ const sellers = [
 
 const styles = {
     heading: "text-xl md:text-3xl font-bold text-center md:text-left",
-    card: "w-[11rem] h-[auto] bg-gray-200 text-center py-5 mb-5"
+    card: "w-auto h-[auto] bg-gray-200 text-center py-5 mb-5 rounded-lg"
 }
 
 const TopSellers = () => {
     return (
-        <div className="mx-2 md:mx-16  mt-5 md:mt-[25rem]">
+        <div className="mx-2 md:mx-16  mt-5">
             <h1 className={styles.heading}>Our top Sellers</h1>
             <div className="flex flex-wrap flex-col-2 md:flex-row itecenms-center justify-between mt-10">
                 {

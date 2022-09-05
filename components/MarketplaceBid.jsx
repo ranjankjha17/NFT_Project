@@ -103,7 +103,7 @@ const data = [
 
 const styles = {
     imageUrl: `w-auto h-auto`,
-    card: `h-auto md:h-[10rem] w-[18rem] border border-slate-300 my-5 md:mb-[25rem]`,
+    card: `h-auto w-[18rem] md:w-auto border border-slate-300 my-5 rounded-lg`,
     icon: `h-10 w-10 rounded`,
     h5Text:`text-sm text-gray-500`
 }
@@ -120,7 +120,7 @@ const MarketplaceBid = () => {
                                 <h5 className={styles.h5Text} style={{marginTop:"0.5rem"}}>{el.username}</h5>
                                 <div>...</div>
                             </div>
-                            <Image  height="275" width="300" className={styles.imageUrl} src={el.image_url} alt="trending_image" />
+                            <Image  height="250" width="286" className={styles.imageUrl} src={el.image_url} alt="trending_image" />
                             <div className="flex items-start justify-evenly pt-3 ">
                                 <div className="flex">
                                 <Image height="30" width="35" className={styles.icon} src="https://cdn.dribbble.com/users/844597/screenshots/9008058/media/a8bfc3cd2e71a304a02d8729bcffa132.png?compress=1&resize=400x300" alt="icon2" />

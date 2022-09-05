@@ -55,7 +55,7 @@ const data = [
 
 const styles = {
     imageUrl: `w-auto h-auto `,
-    card: `h-auto md:h-[10rem] w-[18rem] border border-slate-300 my-5 md:my-0 z-0`,
+    card: `h-auto md:h-auto w-auto border border-slate-300 my-5 mx-4  md:my-0 z-0 rounded-lg`,
     icon: `h-10 w-10 rounded`,
     h5Text:`text-sm text-gray-500`
 }
@@ -63,7 +63,7 @@ const TrendingAuctions = () => {
     return (
         <div className="mx-2 md:mx-16 my-14">
             <h1 className="text-xl md:text-3xl font-bold text-center md:text-left">Trending Auctions</h1>
-            <div className="flex flex-col md:flex-row items-center justify-between mt-10">
+            <div className="flex flex-col md:flex-row items-center justify-between mt-10 md:ml-[-1rem]">
 
                 {
                     data.map((el) => (
@@ -88,7 +88,7 @@ const TrendingAuctions = () => {
                                 <div className="flex items-center justify-between">
                                     <>
                                     <Image  src="/eth.png" alt="Eth" height="25" width="25"/>
-                                    <h5 className="ml-[-4rem]">{el.bid_price}</h5>
+                                    <h5 className="ml-[-3rem]">{el.bid_price}</h5>
                                     </>
                                     <h5 className="">{el.time}</h5>
                                 </div>

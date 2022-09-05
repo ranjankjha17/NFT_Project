@@ -20,7 +20,7 @@ const data=[
 
 
 const styles={
-    card: `h-auto h-[20rem] w-[22rem] rounded-xl border border-slate-300 px-5 py-5 my-5 md:my-0 bg-gray-200 md:mb-[5rem] flex-wrap justify-center items-center`,
+    card: `h-auto md:h-[20rem] w-auto md:w-auto rounded-xl border border-slate-300 px-5 py-5 my-5 md:my-0 bg-gray-200 md:mb-[5rem] flex-wrap justify-center items-center`,
 }
 
 const Mint=()=>{

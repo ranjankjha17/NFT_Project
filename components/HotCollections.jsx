@@ -34,7 +34,7 @@ const data=[
 ]
 
 const styles={
-    card: `h-auto w-[22rem] border border-slate-300 px-5 py-5 my-5 md:my-0 bg-gray-200 md:mb-[5rem] text-center`,
+    card: `h-auto w-auto md:w-auto border border-slate-300 px-5 py-5 my-5 md:my-0 bg-gray-200 md:mb-[5rem] text-center rounded-lg`,
 }
 
 
@@ -49,7 +49,7 @@ const HotCollections=()=>{
                     <div className="w-full h-[15rem]">
                         <Image height={"275"} width={"300"} className="w-full h-full rounded-lg" src={el.image1} alt="coolection"/>
                     </div>
-                    <div className="flex items-center justify-between mt-12 mx-2">
+                    <div className="flex items-center justify-between mt-12">
                         <Image height={"80"} width={"100"} className="w-[8rem] h-[5rem] rounded-lg" src={el.image2} alt="left_photo"/>
                         <Image height={"80"} width={"80"} className="w-[5rem] h-[5rem] mx-2 rounded-full bg-no-repeat bg-cover" src={el.image3} alt="middle_photo"/>
                         <Image height={"80"} width={"100"} className="w-[8rem] h-[5rem] rounded-lg" src={el.image4} alt="right_photo"/>
